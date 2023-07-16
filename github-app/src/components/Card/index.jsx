@@ -14,9 +14,8 @@ function Card({ data }) {
   if (data.documentation_url === "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting") {
     return "Oups.. Vous ne pouvez plus envoyer de requete Api !";
   }
-
   
-  // Format de date de type "23 novembre 2034"
+  //Format de date de type "23 novembre 2034"
   const createdAtDate = new Date(data.created_at);
   const options = { day: 'numeric', year: 'numeric', month: 'long'};
   const formattedDate = createdAtDate.toLocaleDateString("en-GB", options);
