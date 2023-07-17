@@ -1,4 +1,4 @@
-import "./Card/index.css";
+//import "Card/index.css";
 import twitter from "../assets/icon-twitter.svg";
 import website from "../assets/icon-website.svg";
 import company from "../assets/icon-company.svg";
