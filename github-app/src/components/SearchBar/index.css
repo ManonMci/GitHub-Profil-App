@@ -1,0 +1,35 @@
+form{
+    display:flex;
+    margin:auto;
+    background-color: white;
+    box-shadow:2px 7px 15px 0px #b6c4dc;
+    padding:0.9em;
+    border-radius:0.5em;
+    
+}
+.searchBar{
+    width:90%;
+    margin:auto;
+}
+input{
+    width:100%;
+    border:none;
+    font-family: 'Space Mono', monospace;
+}
+button{
+    background-color:#0079FF;
+    border:none;
+    padding:1em;
+    border-radius:0.5em;
+    color:white;
+    font-weight:bold;
+    width:15%;
+    font-family: 'Space Mono', monospace;
+}
+.img-search{
+    object-fit: contain;
+    margin-right:1em;
+    padding-left:15px;
+    padding-right:10px;
+    text-align:center;
+}
