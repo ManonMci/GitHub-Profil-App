@@ -1,8 +1,9 @@
-import './styles/Mode.css';
-import moon from '../assets/icon-moon.svg';
+import "../../components/Header/index.css";
+import moon from '../../assets/icon-moon.svg';
+
 //import { ThemeProvider } from './ThemeContext';
 
-function Mode(){
+function Header(){
     const onClick = {
     }
     
@@ -17,4 +18,4 @@ function Mode(){
     );
 }
 
-export default Mode;
+export default Header;

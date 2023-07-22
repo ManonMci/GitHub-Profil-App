@@ -1,9 +1,10 @@
-import "./styles/SearchBar.css";
 import React, {useState, useEffect} from 'react';
-import loupe from '../assets/icon-search.svg';
-import Card from '../components/Card';
 
-export function Search() {
+import loupe from '../../assets/icon-search.svg';
+import Card from '../../components/Card/index';
+import "../../components/SearchBar/index.css";
+
+export function SearchBar() {
   // J'initialise pour valeur de départ le profil github ocotocat avec la fonction useState({})
   // Ensuite j'utilise la fonction setSearchData pour changer cette valeur de départ avec celle entrée dans la barre de recherche par un utilisateur à chaque fois
   // Enfin j'utilise searchData comme valeur finale 
@@ -44,7 +45,6 @@ export function Search() {
       [name]: value
     }));
   }
-
   return (
     <div className="searchBar">
       <form onSubmit={handleSubmit}>
@@ -60,9 +60,9 @@ export function Search() {
       <Card 
         data = {data}
       />
-    </div>
+    </div> 
   )
 };
 //SearchbarT()
 
-export default Search;
+export default SearchBar;

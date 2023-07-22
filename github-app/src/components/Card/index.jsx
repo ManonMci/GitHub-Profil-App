@@ -1,8 +1,9 @@
-//import "Card/index.css";
-import twitter from "../assets/icon-twitter.svg";
-import website from "../assets/icon-website.svg";
-import company from "../assets/icon-company.svg";
-import location from "../assets/icon-location.svg";
+import "../../components/Card/index.css";
+
+import twitter from '../../assets/icon-twitter.svg';
+import website from "../../assets/icon-website.svg";
+import company from "../../assets/icon-company.svg";
+import location from "../../assets/icon-location.svg";
 
 
 // Gestion du blocage du nombre de requete api 
