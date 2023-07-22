@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 //import loupe from '../assets/icon-search.svg';
 
 
-export function Api(){
+export function getDataGithub(){
     const [searchData, setSearchData] = useState({userName:"octocat"});
     const [data, setData] = useState({});
     
