@@ -23,6 +23,11 @@
     background-color:#F6F8FF;
     color:grey;
     font-weight:700;
+    border:none;
+    padding:1em;
+    border-radius:0.5em;
+    font-weight:bold;
+    font-family: 'Space Mono', monospace;
 }
 
 .dark-button:hover{
