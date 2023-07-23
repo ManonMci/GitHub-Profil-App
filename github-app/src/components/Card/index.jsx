@@ -9,7 +9,7 @@ import location from "../../assets/icon-location.svg";
 // Gestion du blocage du nombre de requete api 
 function Card({ data }) {
   if (data.message === "Not Found") {
-    return "Aie.. aucun utilisateur trouvé "
+    return "Aie.. aucun utilisateur trouvé"
   }
 
   if (data.documentation_url === "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting") {
@@ -27,7 +27,7 @@ function Card({ data }) {
         <div className="avatar">
           <img
             className="avatar-img"
-            src={data.avatar_url}
+            src={data.avatar_url} 
             alt="image de profil"
           />
         </div>

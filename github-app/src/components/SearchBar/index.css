@@ -1,9 +1,10 @@
+
 form{
     display:flex;
     margin:auto;
     background-color: white;
     box-shadow:2px 7px 15px 0px #b6c4dc;
-    padding:0.9em;
+    padding:0.5em;
     border-radius:0.5em;
     
 }
@@ -16,16 +17,28 @@ input{
     border:none;
     font-family: 'Space Mono', monospace;
 }
-button{
+.button-form{
     background-color:#0079FF;
     border:none;
     padding:1em;
     border-radius:0.5em;
     color:white;
     font-weight:bold;
-    width:15%;
+    width:18%;
     font-family: 'Space Mono', monospace;
 }
+
+.button-form:hover{
+    background-color:#0077ffd1;
+    border:none;
+    padding:1em;
+    border-radius:0.5em;
+    color:white;
+    font-weight:bold;
+    width:18%;
+    font-family: 'Space Mono', monospace;
+}
+
 .img-search{
     object-fit: contain;
     margin-right:1em;
