@@ -17,6 +17,10 @@ input{
     border:none;
     font-family: 'Space Mono', monospace;
 }
+input:focus {
+    outline:  none;
+}
+
 .button-form{
     background-color:#0079FF;
     border:none;
