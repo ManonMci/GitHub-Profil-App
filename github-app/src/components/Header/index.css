@@ -5,33 +5,54 @@
     align-items:center;
     margin-bottom:1em;
     width:90%;
-}
-
-.devFinder p{
     font-size:26px;
     font-weight:700;
 }
 
-.Dark-mode{
+
+.mode{
     display:flex;
     justify-content: end;
     align-items: center;
 }
-
-.dark-button{
+.mode-button{
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
     width:100%;
     background-color:#F6F8FF;
     color:grey;
-    font-weight:700;
+    font-weight:600;
+    font-size:0.55em;
     border:none;
-    padding:1em;
+    border-radius:0.5em;
+    font-family: 'Space Mono', monospace;
+    letter-spacing:0.4em;
+}
+
+.dark-button{
+    margin-right:0.5em;
+}
+
+.light-button{
+    width:100%;
+    background-color:#F6F8FF;
+    color:rgb(255, 255, 255);
+    font-weight:500;
+    border:none;
     border-radius:0.5em;
     font-weight:bold;
     font-family: 'Space Mono', monospace;
+    margin-right:0.5em;
 }
 
 .dark-button:hover{
-    color:black;
+    color:rgb(45, 45, 45);
+    font-weight:600;
+}
+
+.light-button:hover{
+    color:rgba(234, 234, 234, 0.874);
     font-weight:bold;
 }
 .ul-social{
