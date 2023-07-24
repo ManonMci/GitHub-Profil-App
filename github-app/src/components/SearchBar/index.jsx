@@ -1,31 +1,44 @@
 import React, {useState, useEffect} from 'react';
-
+import "../../components/SearchBar/index.css";
 import loupe from '../../assets/icon-search.svg';
 import Card from '../../components/Card/index';
-import "../../components/SearchBar/index.css";
 
 export function SearchBar() {
   // J'initialise pour valeur de départ le profil github ocotocat avec la fonction useState({})
   // Ensuite j'utilise la fonction setSearchData pour changer cette valeur de départ avec celle entrée dans la barre de recherche par un utilisateur à chaque fois
   // Enfin j'utilise searchData comme valeur finale 
-  const [searchData, setSearchData] = useState('octocat');
+  const [searchData, setSearchData] = useState('');
   const [showData, setShowData] = useState(false);
-  // data correspond au donnée de l'utilisateur récupéré via la requete api github
-  const [data, setData] = useState({});
+  const [data, setData] = useState({
+    name: "The Octocat",
+    bio: "Je suis la mascotte de Github. Consulte les profils de la communauté ! ",
+    avatar_url: "https://avatars.githubusercontent.com/u/583231?v=4",
+    login: "Octocat",
+    following:0,
+    followers:0,
+    public_repos:0,
+    location:'San Francisco',
+    html_url:'https://github.com/octocat',
+    company:'Github',
+    twitter_username:'Not available',
+    
+  }); // data : donnée de l'utilisateur récupéré via la requete api
 
-  
-
-   // Gestion de mon formulaire de ma barre de recherche
-   // Evenement submit
+   // Gestion des évènements du formulaire
   const handleSubmit = (event) => {
     event.preventDefault();
   }
 
   // Evenement sur la valeur de mon input
-  // Je cible l'input
   const handleChange = (event) => {
     const { name, value } = event.target;
     setSearchData(value);
+  }
+
+  // Evenement sur le bouton
+  const handleClick = (event) => {
+    event.preventDefault();
+    setShowData(true);
   }
 
   useEffect(() => {
@@ -46,11 +59,6 @@ export function SearchBar() {
        // Ce tableau permet d'ajouter dans un second temps la donnée apres execution de la requete api
   }, [searchData, showData]);
 
-  const handleClick = (event) => {
-    event.preventDefault();
-    setShowData(true);
-  }
-
   return (
     <div className="searchBar">
       <form onSubmit={handleSubmit}>
@@ -59,12 +67,11 @@ export function SearchBar() {
           type="text" 
           name="userName"
           value={searchData} 
-         onChange={handleChange} 
+          onChange={handleChange} 
           placeholder="Search GitHub username.."
         />
         <button onClick={handleClick} className="button-form">Search</button>
       </form>
-      
       <Card 
         data = {data}
       />

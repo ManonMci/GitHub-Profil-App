@@ -59,7 +59,7 @@ ul{
 }
 li{
     display:flex;
-    padding-bottom:0.5em;
+    padding-bottom:1em;
     font-size:15px;
     align-items: center;
     margin-right: 1em;
@@ -126,7 +126,7 @@ td{
     padding-top:0.4em;
 }
 
-img{
+.img-icone{
     padding-right: 1em;
 }
 
@@ -134,6 +134,8 @@ a{
     text-decoration:none;
     color:grey;
 }
-a:hover{
-    font-weight:bolder;
+li:hover{
+    font-weight:500;
+    color:#697c9ab3;;
 }
+
