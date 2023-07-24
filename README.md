@@ -1,14 +1,27 @@
-# GitHub-Profil-App
-Application pour rechercher un profil GitHub
+Github Profil
+
+Application web pour rechercher un profil GitHub via son API.
+Construite avec Create-react app de React, Javascript et CSS.
+
+# Statut du projet
+Ce projet est toujours en cours de développement. 
+
+Module :
+- Rechercher un profil utilisateur via la barre de recherche.
+- Afficher un darkMode.
 
 # Lancer le projet 
+Cloner le repository et installer npm et node.
 1. npm start
-2. npm run build + npm start
-3. npm test
-4. npm run eject
+2. npm run build 
 
 # Outils et dependances
-1. Create-react app
-2. Styled-component
-3. Git-flow
-4. React dev tools
+2. test : Jest + Enzyme
+3. Styled-component
+4. Git-flow
+5. React dev tools
+
+
+
+
+
