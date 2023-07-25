@@ -21,4 +21,6 @@ Cloner le repository et installer npm et node.
 4. Git-flow
 5. React dev tools
 
+# Git-Flow
+![image](https://github.com/ManonMci/GitHub-Profil-App/assets/77229225/1a31b365-12cd-4bb3-9a1e-9f656029e1ec)
 
