@@ -21,7 +21,3 @@ Cloner le repository et installer npm et node.
 4. Git-flow
 5. React dev tools
 
-
-
-
-
