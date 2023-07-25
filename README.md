@@ -24,3 +24,8 @@ Cloner le repository et installer npm et node.
 # Git-Flow
 ![image](https://github.com/ManonMci/GitHub-Profil-App/assets/77229225/1a31b365-12cd-4bb3-9a1e-9f656029e1ec)
 
+# GitHub API
+L'API est public. Son nombre de requête est limité. 
+documentation : https://docs.github.com/en/rest/users?apiVersion=2022-11-28#get-a-user
+
+
